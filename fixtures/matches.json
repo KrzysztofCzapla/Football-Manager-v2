@@ -1,0 +1,30 @@
+[
+{
+    "model": "main.match",
+    "pk": 1,
+    "fields": {
+        "date": "2023-10-04",
+        "time": "14:05:50",
+        "location": "Warsaw",
+        "host_team": 1,
+        "guest_team": 2,
+        "host_score": 12,
+        "guest_score": 2,
+        "match_status": "ENDED"
+    }
+},
+{
+    "model": "main.match",
+    "pk": 2,
+    "fields": {
+        "date": "2023-11-04",
+        "time": "14:06:07",
+        "location": "Paris",
+        "host_team": 2,
+        "guest_team": 1,
+        "host_score": 13,
+        "guest_score": 32,
+        "match_status": "ENDED"
+    }
+}
+]

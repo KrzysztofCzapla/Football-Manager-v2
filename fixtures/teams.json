@@ -1,0 +1,20 @@
+[
+{
+    "model": "main.team",
+    "pk": 1,
+    "fields": {
+        "name": "FC Barcelona",
+        "description": "Spanish Club",
+        "logo": ""
+    }
+},
+{
+    "model": "main.team",
+    "pk": 2,
+    "fields": {
+        "name": "Real Madrid",
+        "description": "Spanish Club numero 2",
+        "logo": ""
+    }
+}
+]

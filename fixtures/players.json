@@ -1,0 +1,28 @@
+[
+{
+    "model": "main.player",
+    "pk": 1,
+    "fields": {
+        "name": "Robert Lewangoalski",
+        "team": 1,
+        "position": "FOR",
+        "date_of_birth": "2023-12-04",
+        "nationality": "Polish",
+        "phone_number": "123123123",
+        "photo": ""
+    }
+},
+{
+    "model": "main.player",
+    "pk": 2,
+    "fields": {
+        "name": "Ronaldo",
+        "team": 2,
+        "position": "FOR",
+        "date_of_birth": "2023-12-04",
+        "nationality": "Portugese",
+        "phone_number": "32123",
+        "photo": ""
+    }
+}
+]
