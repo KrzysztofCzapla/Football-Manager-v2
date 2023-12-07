@@ -29,4 +29,4 @@ migrations:
 	make migrate
 
 load-fixtures:
-	docker-compose exec web python ./manage.py loaddata $(FIXTURES)
+	docker-compose exec web python ./manage.py loaddata fixtures/admin.json
