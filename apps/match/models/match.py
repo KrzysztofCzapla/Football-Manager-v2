@@ -1,6 +1,6 @@
 from django.db import models
-from apps.main.enums import EventStatus
-from apps.team.models.team import Team
+from apps.match.enums import EventStatus
+from apps.team.models import Team
 # Create your models here.
 
 class Match(models.Model):

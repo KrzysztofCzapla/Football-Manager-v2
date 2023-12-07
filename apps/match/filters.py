@@ -1,5 +1,5 @@
 import django_filters
-from .models import Match, TrainingSession
+from .models import Match
 
 class MatchFilter(django_filters.FilterSet):
 

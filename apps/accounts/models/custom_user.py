@@ -1,5 +1,5 @@
 from apps.accounts.enums import UserTypes
-from apps.main.models.team import Team
+from apps.team.models import Team
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 

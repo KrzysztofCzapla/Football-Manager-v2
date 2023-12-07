@@ -25,17 +25,19 @@ from drf_yasg import openapi
 schema_view = get_schema_view(
     openapi.Info(
         title="Football-Manager API",
-        default_version='v1',
+        default_version='v2',
         description="Football-Manager API",
     ),
     public=True,
-    permission_classes=(permissions.IsAdminUser,),
+    permission_classes=(permissions.AllowAny ,),
 )
 
 urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('admin/', admin.site.urls),
-    path('', include('apps.main.urls')),
     path('', include('apps.match.urls')),
+    path('', include('apps.team.urls')),
+    path('', include('apps.player.urls')),
+    path('', include('apps.training_session.urls')),
     path('auth/', include('apps.accounts.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

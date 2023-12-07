@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from apps.main.models import Match
+from apps.match.models import Match
 
 class MatchSerializer(serializers.ModelSerializer):
     class Meta:

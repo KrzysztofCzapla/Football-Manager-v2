@@ -35,8 +35,11 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     'drf_yasg',
     'django_filters',
-    'apps.main',
-    'apps.accounts'
+    'apps.accounts',
+    'apps.team',
+    'apps.player',
+    'apps.training_session',
+    'apps.match',
 ]
 
 MIDDLEWARE = [
