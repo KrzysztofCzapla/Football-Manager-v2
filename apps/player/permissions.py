@@ -6,8 +6,6 @@ class PlayerObjectPermission(BasePermission):
         user = request.user
         if user.is_staff:
             return True
-        elif user.type_of_user == 'MODERATOR':
-            return True
         elif user.type_of_user == 'COACH':
             allowed_actions = ['list', 'retrieve']
             return view.action in allowed_actions

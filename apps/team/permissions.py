@@ -1,6 +1,6 @@
 from rest_framework.permissions import BasePermission
 
-class MatchObjectPermission(BasePermission):
+class TeamObjectPermission(BasePermission):
 
     def has_permission(self, request, view):
         user = request.user
