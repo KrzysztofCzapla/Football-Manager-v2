@@ -1,9 +1,4 @@
-FIXTURES = fixtures/admin.json \
-		   fixtures/matches.json \
-		   fixtures/players.json \
-		   fixtures/teams.json \
-		   fixtures/groups_fixture.json \
-		   fixtures/trainings.json
+
 
 
 build:

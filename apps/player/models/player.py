@@ -2,6 +2,7 @@ from django.db import models
 from apps.player.enums import PlayerPositions
 from apps.team.models import Team
 from apps.accounts.models import CustomUser
+from apps.common.models import Country
 
 class Player(models.Model):
     name = models.CharField()
@@ -12,7 +13,7 @@ class Player(models.Model):
 
     date_of_birth = models.DateField()
 
-    nationality = models.CharField()
+    country_of_origin = models.ForeignKey(Country, on_delete=models.SET_NULL, default=None, null=True, blank=True)
 
     phone_number = models.CharField(max_length=12)
 

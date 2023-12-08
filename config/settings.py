@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.player',
     'apps.training_session',
     'apps.match',
+    'apps.common',
 ]
 
 MIDDLEWARE = [
