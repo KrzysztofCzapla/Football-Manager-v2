@@ -1,9 +1,11 @@
 from django.db import models
 from apps.match.enums import EventStatus
 from apps.team.models import Team
-# Create your models here.
+from apps.accounts.models import CustomUser
 
 class Match(models.Model):
+    organizer = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, default=None, null=True, blank=True, related_name="organized_match")
+
     date = models.DateField()
 
     time = models.TimeField()

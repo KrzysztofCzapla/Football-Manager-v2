@@ -9,3 +9,6 @@ class MatchViewSet(viewsets.ModelViewSet):
     queryset = Match.objects.all()
 
     permission_classes = [MatchObjectPermission]
+
+    def perform_create(self, serializer):
+        serializer.save(organizer=self.request.user)

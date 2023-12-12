@@ -11,3 +11,6 @@ class TeamViewSet(viewsets.ModelViewSet):
     parser_classes = [MultiPartParser]
 
     permission_classes = [TeamObjectPermission]
+
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)

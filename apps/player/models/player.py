@@ -19,4 +19,4 @@ class Player(models.Model):
 
     photo = models.ImageField(upload_to='player_photos/', null=True, blank=True)
 
-    user = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, default=None, null=True, blank=True)
+    user = models.OneToOneField(CustomUser, on_delete=models.SET_NULL, default=None, null=True, blank=True)

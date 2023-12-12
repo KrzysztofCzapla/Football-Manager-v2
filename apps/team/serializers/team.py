@@ -6,4 +6,4 @@ class TeamSerializer(serializers.ModelSerializer):
     country = CountrySerializer(read_only=True)
     class Meta:
         model = Team
-        fields = ('name', 'description', 'logo', 'country')
+        fields = ('name', 'description', 'logo', 'country', 'owner', 'coach')
