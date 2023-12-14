@@ -1,0 +1,2 @@
+from .schedules import TrainingSessionFilterView
+from .training_session import TrainingSessionViewSet
